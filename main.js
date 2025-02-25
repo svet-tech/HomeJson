@@ -12,7 +12,7 @@ const getPosts = () => {
 function displayPosts(posts) {
   const postsContainer = document.getElementById('posts');
   const slicedPosts = posts.slice(0, 9); //срез - через константу!
-postsContainer[0] = postsContainer[0].toUpperCase();
+
   slicedPosts.forEach(post => {
     const postElement = document.createElement('div');
     postElement.style.marginBottom = '40px';
